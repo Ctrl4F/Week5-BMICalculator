@@ -4,7 +4,7 @@ namespace BMICalculator
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args, int weight)
         {
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
@@ -12,7 +12,7 @@ namespace BMICalculator
             int age = Int32.Parse(Console.ReadLine());
             
             
-            if(age <= 28)
+            if(age <= 20)
             {
                 Console.WriteLine("You are too young to use the calculator");
             }else if(age >= 60)
@@ -27,6 +27,25 @@ namespace BMICalculator
                 Console.WriteLine($"your height is {height} meters.");
 
             }
+            {
+                Console.WriteLine("What is your is weight?");
+                double weight = Console.ReadLine();
+
+
+
+
+            }else if (weight >= 19) 
+            {
+                Console.ReadLine("Underweight");
+
+
+            }
+            else if (weight >= 25)
+            {
+                Console.ReadLine("")
+            }
+
+
             
             
 
